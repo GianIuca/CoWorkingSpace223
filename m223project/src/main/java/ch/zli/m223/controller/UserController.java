@@ -20,13 +20,13 @@ import ch.zli.m223.service.UserService;
 @Path("/user")
 @Tag(name = "Entries", description = "Handling of places")
 public class UserController {
-    
+
     @Inject
     UserService userService;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Operation(summary = "returns all bookings", description = "returns all bookings")
+    @Operation(summary = "returns all places", description = "returns all places")
     public List<User> getUsers() {
         return userService.getUsers();
     }
@@ -34,7 +34,7 @@ public class UserController {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    @Operation(summary = "create new bookin", description = "create new bookin")
+    @Operation(summary = "create new places", description = "create new places")
     public User create(User user) {
         return userService.createUsers(user);
     }
@@ -42,7 +42,7 @@ public class UserController {
    
     @DELETE
     @Path("/{id}")
-    @Operation(summary = "delete booking by ID", description = "delete booking by ID")
+    @Operation(summary = "delete place by ID", description = "delete place by ID")
     public void delete(@PathParam("id") Long id) {
         userService.deleteUser(id);
     }
