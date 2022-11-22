@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -24,8 +23,7 @@ public class Role {
     @Column(nullable = false)
     private String typ;
 
-    @OneToMany
-    @JoinColumn(name = "roleid")
+    @OneToMany(mappedBy = "role")
     @JsonIgnoreProperties("role")
     private Set<User> users;
 
