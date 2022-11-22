@@ -22,7 +22,7 @@ public class PlaceService {
     }
 
     @Transactional
-    public Place updatPlace(Place place, Long id) {
+    public Place updatePlace(Place place, Long id) {
         return entityManager.merge(place);
     }
 
