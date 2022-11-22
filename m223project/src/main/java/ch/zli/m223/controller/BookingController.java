@@ -8,7 +8,6 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -16,14 +15,12 @@ import javax.ws.rs.core.MediaType;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
-import com.arjuna.ats.internal.jdbc.drivers.modifiers.list;
-
 import ch.zli.m223.model.Booking;
 import ch.zli.m223.service.BookingService;
 import javax.ws.rs.PathParam;
 
 @Path("/booking")
-@Tag(name = "Entries", description = "Handling of buchungen")
+@Tag(name = "Entries", description = "Handling of booking")
 public class BookingController {
 
     @Inject
@@ -52,15 +49,15 @@ public class BookingController {
         bookingService.deleteBooking(id);
     }
 
-    /*
- * @PUT
-    @Path("/update/{id}")
-    @Operation(summary = "delete booking by ID", description = "delete booking by ID")
-    public Booking update(@PathParam("id") Booking booking, Long id){
-        return bookingService.updateBooking(booking, id);
-            
-    } 
- */
+        /*
+    * @PUT
+        @Path("/update/{id}")
+        @Operation(summary = "delete booking by ID", description = "delete booking by ID")
+        public Booking update(@PathParam("id") Booking booking, Long id){
+            return bookingService.updateBooking(booking, id);
+                
+        } 
+    */
        
 
     @POST
