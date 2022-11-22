@@ -52,6 +52,24 @@ public class BookingController {
         bookingService.deleteBooking(id);
     }
 
+    /*
+ * @PUT
+    @Path("/update/{id}")
+    @Operation(summary = "delete booking by ID", description = "delete booking by ID")
+    public Booking update(@PathParam("id") Booking booking, Long id){
+        return bookingService.updateBooking(booking, id);
+            
+    } 
+ */
+       
 
-
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Operation(summary = "create new bookin", description = "create new bookin")
+    public Booking create(Booking booking) {
+        return bookingService.createBooking(booking);
+    }
+     
+    
 }

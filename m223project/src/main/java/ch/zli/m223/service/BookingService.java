@@ -29,7 +29,7 @@ public class BookingService {
 
     @Transactional
     public Booking createBooking(Booking booking) {
-        entityManager.persist(booking);
+        entityManager.merge(booking);
         return booking;
     }
 
