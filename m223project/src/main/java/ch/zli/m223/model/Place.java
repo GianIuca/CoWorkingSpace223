@@ -1,11 +1,22 @@
 package ch.zli.m223.model;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "Place")
@@ -19,7 +30,18 @@ public class Place {
     private double story;
 
     @Column(nullable = true)
-    private boolean isBooked;
+    private boolean isbooked;
+
+    @OneToMany
+    @JoinColumn(name = "placeid")
+    @JsonIgnoreProperties("place")
+    private Set<Booking> booking;
+
+    @OneToMany
+    @JoinColumn(name = "placeid")
+    @JsonIgnoreProperties("place")
+    private Set<Extra> extra;
+
 
     public Long getId() {
         return id;
@@ -38,11 +60,11 @@ public class Place {
     }
 
     public boolean isBooked() {
-        return isBooked;
+        return isbooked;
     }
 
-    public void setBooked(boolean isBooked) {
-        this.isBooked = isBooked;
+    public void setBooked(boolean isbooked) {
+        this.isbooked = isbooked;
     }
 
     
