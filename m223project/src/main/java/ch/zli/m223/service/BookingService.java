@@ -10,22 +10,21 @@ import javax.transaction.Transactional;
 import ch.zli.m223.model.Booking;
 
 
-public class BookingService {
 
 @ApplicationScoped
-public class BuchungService {
+public class BookingService {
 
     @Inject
     private EntityManager entityManager;
 
     @Transactional
-    public Booking findBookingById(Long id) {
+    public Booking getBookingById(Long id) {
         return  entityManager.find(Booking.class, id);
     }
 
     public List<Booking> getBookings() {
-        var query = entityManager.createQuery("FROM Buchung", Booking.class);
-        return query.getResultList();
+        var qry = entityManager.createQuery("FROM Booking", Booking.class);
+        return qry.getResultList();
     }
 
     @Transactional
@@ -39,7 +38,7 @@ public class BuchungService {
         var entity = entityManager.find(Booking.class, id);
         entityManager.remove(entity);
     }
-    
+
     @Transactional
     public Booking updateBooking(Long id, Booking booking) {
         return entityManager.merge(booking);
@@ -47,4 +46,5 @@ public class BuchungService {
 
 
 }
-}
+
+
