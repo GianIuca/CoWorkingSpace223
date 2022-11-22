@@ -12,7 +12,7 @@ INSERT INTO "Booking" ("end", "start", "status", "place_id", "user_id") VALUES(T
 INSERT INTO "Booking" ("end", "start", "status", "place_id", "user_id") VALUES(TO_TIMESTAMP('2003-5-6 03:30:30', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2003-5-5 07:07:07', 'YYYY-MM-DD HH24:MI:SS'), true, 1, 1);
 
 INSERT INTO "Extra" ("name", "price", "place_id") VALUES ('Monitor',255.50, 1);
-INSERT INTO "Extra" ("name", "price", "place_id") VALUES ('Maus', 179.50, 1);
+INSERT INTO "Extra" ("name", "price", "place_id") VALUES ('Maus', 179.50, 2);
 
 
 

@@ -35,12 +35,12 @@ public class BookingService {
 
     @Transactional
     public void deleteBooking(Long id) {
-        var entity = entityManager.find(Booking.class, id);
-        entityManager.remove(entity);
+        var qry = entityManager.find(Booking.class, id);
+        entityManager.remove(qry);
     }
 
     @Transactional
-    public Booking updateBooking(Long id, Booking booking) {
+    public Booking updateBooking(Booking booking, Long id) {
         return entityManager.merge(booking);
     }
 
