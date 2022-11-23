@@ -53,3 +53,7 @@ Als Mitglied kann ich zusätzliche technische Mittel erstellen (Monitor, Maus, T
 In der Tabelle Booking habe ich zusätzlich das Attribut status: boolean hinzugefügt, da dieses notwendig ist, um die Buchung an/abzulehnen. Wenn sie null ist, soll sie pending darstellen
 
 Bei der Schnittstellen planung sind auch noch ein paar änderungen passiert, da ich nicht alle brauchte und ein paar mehr brauche wie z.B. `/login/{email}/{password}` oder `/register`
+
+## Login
+(http://localhost:8080/auth/login/gianluca.ferrara@gmail.ch/JuveToTheTop69")" -> Admin
+http://localhost:8080/auth/login/mattia.loiarro@gmail.com/MilanIschNedGuet420" -> Mitglied
