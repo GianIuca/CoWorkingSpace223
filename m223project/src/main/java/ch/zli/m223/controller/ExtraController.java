@@ -4,6 +4,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.annotation.security.PermitAll;
+import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.core.MediaType;
@@ -15,7 +16,7 @@ import ch.zli.m223.model.Extra;
 import ch.zli.m223.service.ExtraService;
 
 @Path("/extra")
-@PermitAll
+@RolesAllowed({"Administrator", "Mitglied"})
 @Tag(name = "Entries", description = "Handling of extras")
 public class ExtraController {
 
