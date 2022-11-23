@@ -46,9 +46,11 @@ public class AuthController {
     @Produces(MediaType.APPLICATION_JSON)
     @Operation(summary = "returns jwt for user", description = "returns jwt for user")
     public String authlogin(@PathParam("email") String username, @PathParam("password") String password) {
-        if(authService.doesThisUserExistsAlready(username, password) == true){
+        if(authService.doesThisUserExistsAlready(username, password) == true && username == "gianluca.ferrara@gmail.ch"){
             return this.authService.generateTokenAdmin();
-        }else{
+        }else if (authService.doesThisUserExistsAlready(username, password) == true){
+            return this.authService.generateTokenMitglied();
+        }        else{
             return null;
         }
     }
