@@ -26,9 +26,6 @@ public class AuthService {
     public String login( User user) {
         var entity = entityManager.find(User.class, user.getId());
 
-        System.out.println("iD: "+entity.getId());
-        System.out.println(entity.getPassword() +"' ist das selbe wie '" + user.getPassword() +"': "+ entity.getPassword().equals(user.getPassword()));
-        System.out.println(entity.getEmail().equals(user.getEmail()));
         if(entity.getPassword().equals(user.getPassword())  &&  entity.getEmail().equals(user.getEmail()) ){
             if(entity.getRole().getId() == 1) {
                 return generateTokenAdmin();
@@ -75,10 +72,6 @@ public class AuthService {
         }
         return exists;
     }
-
-    
-
-    
 
 }
 
