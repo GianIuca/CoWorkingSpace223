@@ -20,13 +20,22 @@ public class AuthTests {
 
     // Outcome should not succed and return a 204 
     @Test
-    public void testLoginWrongInput() {
-        given()
+    public void testLogin204() {
+        given().contentType(ContentType.JSON)
             .when().post("http://localhost:8080/auth/login/gianlukas.ferrari%bbw.lernende.ch/JuveToTheTop69")
             .then()
             .statusCode(204);
     }
 
-    
+    @Test
+    public void testLoginWrongPath() {
+        given().contentType(ContentType.JSON)
+            .when().post("http://localhost:8080/auth/login/gianlukas.ferrari%bbw.lernende.ch/JuveToTheTop69/nnucuuanj/129873")
+            .then()
+            .statusCode(404);
+    }
+
+
+
 
 }
