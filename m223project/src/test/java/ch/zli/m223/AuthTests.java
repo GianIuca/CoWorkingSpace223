@@ -20,13 +20,14 @@ public class AuthTests {
 
     // Outcome should not succed and return a 204 
     @Test
-    public void testLogin204() {
+    public void testLoginWrongUserData() {
         given().contentType(ContentType.JSON)
             .when().post("http://localhost:8080/auth/login/gianlukas.ferrari%bbw.lernende.ch/JuveToTheTop69")
             .then()
             .statusCode(204);
     }
 
+    // Outcome should not succed and return a 404 bc this Path does not exists 
     @Test
     public void testLoginWrongPath() {
         given().contentType(ContentType.JSON)
