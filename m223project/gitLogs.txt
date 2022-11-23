@@ -1,0 +1,186 @@
+commit 45499fca07b29f64f3c0accc62d864c1b0ce39f2
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 15:58:08 2022 +0100
+
+    Update README.md
+
+commit 2b3a9e18448804f634ab2d7548aff77bcc9ea4e3
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 15:54:18 2022 +0100
+
+    Updated README
+
+commit 5ed29b9f82579cb7ab8980a587dcb1235268e694
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 15:53:54 2022 +0100
+
+    Added Places Tests
+
+commit 309b62d84b780fe809fde3ac8bb0bf4e93b5b83e
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 15:51:28 2022 +0100
+
+    Added UserTests
+
+commit 3b24c2fe8aba30772c78c8f803833670d7e6eb05
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 14:44:16 2022 +0100
+
+    Added Extra Tests
+
+commit 84e7d603d2199b8dd42222d719b88119c607ffdb
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 14:29:36 2022 +0100
+
+    Added Booking Tests
+
+commit e0e3c8cd07e83b51e3162ff042075374d143db00
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 13:30:33 2022 +0100
+
+    Added 4. Test for Register in AuthTests.java
+
+commit 45ba2b699bc7f43a085bb7c2edaef0c5d2a41c93
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 13:25:40 2022 +0100
+
+    Update AuthTests.java
+
+commit cea60cb6b92c829fd5a0b2c5b476d822e3b175fb
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 13:24:08 2022 +0100
+
+    Added 3. Auth Test
+
+commit ecab7a0be7aa3dbcbbefd7395ad00fc3c4c13b41
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 13:22:02 2022 +0100
+
+    Added 2 Auth Tests
+
+commit 864ba2da220a9b938d131f0b3f9c1191072129a5
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 12:59:41 2022 +0100
+
+    Added Test Classes
+
+commit fe49ea5dbad668a6d2794210e7a2c4d49b5249c4
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 12:58:50 2022 +0100
+
+    Added Authorization feature for Mitglied
+
+commit e097a16198cafecb6b1e80881434432a4b21270d
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 11:24:10 2022 +0100
+
+    Added working Permissions with JWT
+
+commit 5b5d326ec7e6a3f66b5176a829ccda1199e94846
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Wed Nov 23 08:56:15 2022 +0100
+
+    Fixed PUTMethod bug and implemented it
+
+commit 321edb284aa2b18d6abf316730133c427628c457
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 22:59:46 2022 +0100
+
+    Deleted useless imports in UserController
+
+commit 4eb43afd3c62c01a0830585d5a7da72d6fb00139
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 22:52:20 2022 +0100
+
+    Added User HTTP Methodes
+
+commit 84064d87e860ae9f7030829ac6b6d4c868e623f1
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 22:29:27 2022 +0100
+
+    Added GET Methode for Places
+
+commit 23b0bac07121a0d44afa90a53f3b167bdc86281a
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 22:17:41 2022 +0100
+
+    Added GET Methode for Places
+
+commit 6f58b04d2487d8638004ca56c53cbd65a8ebbd05
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 21:50:44 2022 +0100
+
+    Added POST Methode
+
+commit fea83c9b34b18f7f570cd1f7860010904ff1e966
+Merge: 69a028a 92cf67a
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 21:22:17 2022 +0100
+
+    Merge branch 'main' of https://github.com/GianIuca/CoWorkingSpace223
+
+commit 69a028a35ad756ef9cf9941fdb92a059eb28dafc
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 21:22:10 2022 +0100
+
+    Added DELETE Methode
+
+commit 92cf67af6bd35648ce71e051174b98679b989bdf
+Author: GianIuca <81155368+GianIuca@users.noreply.github.com>
+Date:   Tue Nov 22 20:20:42 2022 +0100
+
+    Deleted unnecessary file
+
+commit 4e32f402087eb40a49fac7378f81a9ef54146d38
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 20:17:58 2022 +0100
+
+    Added GET methods for booking
+
+commit be230551a13e1862a5cf8fd2d63a978e7a286b76
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 16:32:50 2022 +0100
+
+    Completed BookingService
+
+commit dfb994850d1816b96b91ffaa507a03e01a9d8a8e
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 16:18:14 2022 +0100
+
+    Added Service classes
+
+commit f81c380522aab25599b68b4737e72e54a4234651
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 16:12:28 2022 +0100
+
+    Added Controller classes without context
+
+commit 1ab298a82a14f9accc80997833e25adb66bd0363
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 16:06:00 2022 +0100
+
+    added data to the db
+
+commit 277581afa9c751f61c6a478e2356bbf3e0552781
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 15:12:47 2022 +0100
+
+    added table connections
+
+commit c4de8efc339ce39a3ff93deb66a996398e432818
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 12:54:52 2022 +0100
+
+    added models
+
+commit 9bab8c603ba899546281907fc5c212cbeeab6f3e
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 10:32:54 2022 +0100
+
+    added existing punchclock project
+
+commit b7f7fb2b55c898a74b877b53f36ec36292491510
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Nov 22 10:14:26 2022 +0100
+
+    Initial commit
