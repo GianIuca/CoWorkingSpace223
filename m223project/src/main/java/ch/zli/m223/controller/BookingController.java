@@ -8,6 +8,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -49,24 +50,26 @@ public class BookingController {
         bookingService.deleteBooking(id);
     }
 
-        /*
-    * @PUT
-        @Path("/update/{id}")
-        @Operation(summary = "delete booking by ID", description = "delete booking by ID")
-        public Booking update(@PathParam("id") Booking booking, Long id){
-            return bookingService.updateBooking(booking, id);
+        
+    @PUT
+    @Path("/update/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Operation(summary = "update booking by ID", description = "update booking by ID")
+    public Booking update( Booking booking, @PathParam("id") Long id){
+        return bookingService.updateBooking(booking, id);
                 
-        } 
-    */
+    } 
+
        
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    @Operation(summary = "create new bookin", description = "create new bookin")
+    @Operation(summary = "create new booking", description = "create new booking")
     public Booking create(Booking booking) {
         return bookingService.createBooking(booking);
     }
      
-    
+
 }

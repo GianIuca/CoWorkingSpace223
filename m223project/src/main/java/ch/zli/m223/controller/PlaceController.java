@@ -3,7 +3,9 @@ import java.util.List;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -30,15 +32,16 @@ public class PlaceController {
     }
    // POST ADMIN
 
-   /*
-    * @PUT
+
+   
+    @PUT
     @Path("/update/{id}")
     @Operation(summary = "delete place by ID", description = "delete place by ID")
-    public Place update(@PathParam("id") Place place, Long id){
-        return placeService.updatPlace(place, id);
+    public Place update( Place place,@PathParam("id") Long id){
+        return placeService.updatePlace(place, id);
             
     } 
-    */
+    
 
     
     
