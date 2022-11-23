@@ -1,9 +1,8 @@
 INSERT INTO "Place" ("isbooked", "story") VALUES (true, 2.5);
 INSERT INTO "Place" ("isbooked", "story") VALUES (false, 1.5);
 
-INSERT INTO "Role" ("typ") VALUES ('admin');
-INSERT INTO "Role" ("typ") VALUES ('mitglied');
-INSERT INTO "Role" ("typ") VALUES ('besucher');
+INSERT INTO "Role" ("typ") VALUES ('Administrator');
+INSERT INTO "Role" ("typ") VALUES ('Mitglied');
 
 INSERT INTO "User" ("email", "firstname", "lastname", "password", "role_id") VALUES ('gianluca.ferrara@gmail.ch','Gianluca','Ferrara','JuveToTheTop69' , 1);
 INSERT INTO "User" ("email", "firstname", "lastname", "password", "role_id") VALUES ('mattia.loiarro@gmail.com','Mattia','Loiarro','MilanIschNedGuet420',2);

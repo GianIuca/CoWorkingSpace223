@@ -3,6 +3,7 @@ package ch.zli.m223.controller;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.annotation.security.PermitAll;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.core.MediaType;
@@ -14,6 +15,7 @@ import ch.zli.m223.model.Extra;
 import ch.zli.m223.service.ExtraService;
 
 @Path("/extra")
+@PermitAll
 @Tag(name = "Entries", description = "Handling of extras")
 public class ExtraController {
 

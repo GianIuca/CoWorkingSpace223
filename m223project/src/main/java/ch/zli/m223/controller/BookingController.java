@@ -3,6 +3,7 @@ package ch.zli.m223.controller;
 
 import java.util.List;
 
+import javax.annotation.security.PermitAll;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -21,6 +22,7 @@ import ch.zli.m223.service.BookingService;
 import javax.ws.rs.PathParam;
 
 @Path("/booking")
+@PermitAll
 @Tag(name = "Entries", description = "Handling of booking")
 public class BookingController {
 

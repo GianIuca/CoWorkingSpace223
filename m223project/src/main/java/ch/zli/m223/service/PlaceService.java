@@ -26,5 +26,11 @@ public class PlaceService {
         return entityManager.merge(place);
     }
 
+    @Transactional
+    public Place creatPlace(Place place) {
+        entityManager.merge(place);
+        return place;
+    }
+
 
 }
